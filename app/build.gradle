@@ -11,20 +11,22 @@ tasks.whenTaskAdded { task ->
 }
 
 android {
+    namespace 'ca.pkay.rcloneexplorer'
+
     signingConfigs {
         release {
             keyAlias 'fdroid'
             storeFile file('.config/android/roundsync.keystore')
         }
     }
-    compileSdkVersion 33
+    compileSdkVersion 34
     ndkVersion project.properties['de.felixnuesse.extract.ndkVersion']
     defaultConfig {
         generatedDensities = []
         vectorDrawables.generatedDensities = []
         applicationId 'de.felixnuesse.extract'
         minSdkVersion 23
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 240 // last digit is reserved for ABI, only ever end on 0!
         versionName '2.1.4'
         resourceConfigurations += ['en', 'de']
@@ -58,7 +60,7 @@ android {
         }
     }
 
-    flavorDimensions 'edition'
+    flavorDimensions 'edition', 'abi'
     productFlavors {
         // Default GitHub and Google Play build
         rcx {
@@ -68,11 +70,19 @@ android {
         oss {
             dimension 'edition'
         }
+        // personal build
+        arm64 {
+            dimension 'abi'
+            versionNameSuffix "-ts"
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
+        }
     }
 
     splits {
         abi {
-            enable true
+            enable false
             reset()
             include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
             universalApk true
@@ -93,11 +103,14 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '17'
+    }
+    lintOptions {
+        abortOnError false
     }
     packagingOptions {
         jniLibs {
@@ -122,34 +135,33 @@ repositories {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.7.0-alpha01'
-    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha03'
+    implementation 'androidx.vectordrawable:vectordrawable:1.2.0-beta01'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.browser:browser:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha11'
+    implementation 'androidx.browser:browser:1.6.0-rc01'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'com.github.leinardi:FloatingActionButtonSpeedDial:3.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'com.leinardi.android:speed-dial:3.3.0'
     implementation 'org.markdownj:markdownj-core:0.4'
     implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
     implementation 'com.github.GrenderG:Toasty:1.3.0'
 
-    implementation 'androidx.appcompat:appcompat:1.7.0-alpha01'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.preference:preference-ktx:1.2.0'
-    implementation 'androidx.datastore:datastore-preferences:1.0.0'
+    implementation 'androidx.datastore:datastore-preferences:1.1.0-alpha04'
 
 
     // Thumbnails
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
     // REST Client
-    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
-    debugImplementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+    debugImplementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
     // JSON
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.1'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.14.1'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
     // Timestmps
     implementation 'com.github.x0b:rfc3339parser:2.0.0'
     // SAF/WebDAV
@@ -160,9 +172,9 @@ dependencies {
     implementation 'net.sourceforge.streamsupport:android-retrostreams:1.7.4'
     implementation 'net.sourceforge.streamsupport:android-retrofuture:1.7.4'
     // App intro
-    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+    implementation 'com.github.AppIntro:AppIntro:6.2.0'
     // TEST
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test:runner:1.5.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

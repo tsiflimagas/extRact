@@ -31,7 +31,6 @@
 # -keep public class ca.pkay.rcloneexplorer.RcloneRcd.*
 -keep class ca.pkay.rcloneexplorer.** { *; }
 
-
 -dontwarn org.bouncycastle.jsse.BCSSLParameters
 -dontwarn org.bouncycastle.jsse.BCSSLSocket
 -dontwarn org.bouncycastle.jsse.provider.BouncyCastleJsseProvider

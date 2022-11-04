@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 33
+    namespace 'io.github.x0b.safdav'
+
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
