@@ -1,0 +1,681 @@
+<resources>
+    <string name="app_name">extRact</string>
+    <string name="app_description">Rclone for Android</string>
+    <string name="app_short_name">extRact</string>
+    <string name="title_activity_main">extRact</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_changelog">Changelog</string>
+    <string name="title_activity_contributors">License</string>
+    <string name="remotes">Remotes</string>
+    <string name="settings">Settings</string>
+    <string name="import_rclone_config">Import rclone config</string>
+    <string name="export_rclone_config">Export rclone config</string>
+    <string name="about">About</string>
+    <string name="sort">Sort</string>
+    <string name="select_all">Select all</string>
+    <string name="serve">Serve…</string>
+    <string name="action_sort_name">Name</string>
+    <string name="action_sort_date">Date</string>
+    <string name="action_sort_size">Size</string>
+    <string name="download">Download</string>
+    <string name="move">Move</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="app_version">App Version</string>
+    <string name="rclone_version">Rclone Version</string>
+    <string name="changelog">Changelog</string>
+    <string name="license_and_contributors">License and Contributors</string>
+    <string name="credits_libraries">Libraries and Credits</string>
+    <string name="star_on_github">Star on GitHub</string>
+    <string name="report_a_bug">Report a bug</string>
+    <string name="author">Original Author</string>
+    <string name="author_name" translatable="false">Patryk Kaczmarkiewicz</string>
+    <string name="follow_on_github">Follow on GitHub</string>
+    <string name="maintainer">Maintainer</string>
+    <string name="maintainer_name" translatable="false">Felix Nüsse &lt;github.com/newhinton&gt;</string>
+    <string name="old_maintainer">Old Maintainer</string>
+    <string name="old_maintainer_name" translatable="false">x0b &lt;github.com/x0b&gt;</string>
+    <string name="empty_folder">The folder is empty</string>
+    <string name="ooops">Ooops!</string>
+    <string name="no_config_found">No configuration found, please import or add remote</string>
+    <string name="import_configuration">Import configuration</string>
+    <string name="empty_state_icon">Empty state icon</string>
+    <string name="file_icon">File icon</string>
+    <string name="interpunct">•</string>
+    <string name="remote_icon">Remote Icon</string>
+    <string name="new_folder">New Folder</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="app_icon">App Icon</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="github_app_url" translatable="false">https://github.com/newhinton/extRact</string>
+    <string name="github_issue_url" translatable="false">https://github.com/newhinton/extRact/issues/new/choose</string>
+    <string name="github_author_url" translatable="false">https://github.com/kaczmarkiewiczp</string>
+    <string name="github_maintainer_url" translatable="false">https://github.com/newhinton</string>
+    <string name="github_old_maintainer_url" translatable="false">https://github.com/x0b</string>
+    <string name="about_check_updates">Check</string>
+    <string name="replace_config_file_question">Replace current configuration file?</string>
+    <string name="config_file_lost_statement">Your current configuration will be lost</string>
+    <string name="continue_statement">Continue</string>
+    <string name="download_complete">Download complete</string>
+    <string name="download_service_notification_description">File downloads</string>
+    <string name="download_service_notification_title">Download</string>
+    <string name="streaming_service_notification_title">Streaming Service</string>
+    <string name="streaming_service_notification_content">Serving on http://127.0.0.1:%1$d</string>
+    <string name="streaming_service_notification_channel_description">Streaming service</string>
+    <string name="streaming_task_failed">Could not stream file</string>
+    <string name="rcd_service_notification_channel_description">Background Service</string>
+    <string name="upload_service_notification_title">Upload</string>
+    <string name="upload_complete">Upload complete</string>
+    <string name="upload_service_notification_channel_description">File uploads</string>
+    <string name="remotes_toolbar_title">Remotes</string>
+    <string name="fab_upload_files">Upload Files</string>
+    <string name="fab_new_folder">New Folder</string>
+    <string name="okay_confirmation">Okay</string>
+    <string name="selected">selected</string>
+    <string name="rename_file">Rename a file</string>
+    <string name="type_new_file_name">Please type new file name</string>
+    <string name="select_destination">Select destination</string>
+    <string name="create_new_folder">Create new folder</string>
+    <string name="type_new_folder_name">Please type new folder name</string>
+    <string name="loading_file">Loading file</string>
+    <string name="please_wait">Please wait</string>
+    <string name="ok">OK</string>
+    <string name="file_renamed_success">File Renamed</string>
+    <string name="files_moved_success">File(s) moved</string>
+    <string name="files_deleted_success">File(s) deleted</string>
+    <string name="make_directory_success">New folder created</string>
+    <string name="error_getting_dir_content">Error retrieving directory content</string>
+    <string name="error_getting_remotes">Error retrieving remotes</string>
+    <string name="error_deleting_file">Error deleting a file</string>
+    <string name="error_mkdir">Error creating a directory</string>
+    <string name="error_moving_file">Error moving a file</string>
+    <string name="sort_by_name">By name</string>
+    <string name="sort_by_date_modified">By date modified</string>
+    <string name="sort_by_size">By size</string>
+    <string name="sort_ascending">Ascending</string>
+    <string name="sort_descending">Descending</string>
+    <string name="filename">Filename</string>
+    <string name="modified_time">Modified time</string>
+    <string name="size">Size</string>
+    <string name="md5" translatable="false">MD5</string>
+    <string name="sha1" translatable="false">SHA1</string>
+    <string name="tap_to_calculate">Tap to calculate</string>
+    <string name="calculating">Calculating</string>
+    <string name="hash_error">ERROR</string>
+    <string name="hash_unsupported">UNSUPPORTED</string>
+    <string name="hash_copied_confirmation">Hash copied to clipboard</string>
+    <string name="copying_rclone_config">Copying rclone configuration</string>
+    <string name="copying_rclone_config_fail">Copying rclone configuration failed</string>
+    <string name="creating_rclone_binary">Creating rclone binary</string>
+    <string name="error_creating_rclone_binary">Error creating rclone binary</string>
+    <string name="config_password_protected">Configuration file is password protected</string>
+    <string name="please_enter_password">Please enter your password</string>
+    <string name="working">Working</string>
+    <string name="error_unlocking_config">Error unlocking configuration</string>
+    <string name="locked_configuration_password">Locked configuration password</string>
+    <string name="configuration_is_password_protected">Configuration is password protected</string>
+    <string name="press_to_unlock">Press to unlock</string>
+    <string name="out_of">out of</string>
+    <string name="downloads_finished">downloads finished</string>
+    <string name="downloads_failed">downloads failed</string>
+    <string name="download_failed">Download failed</string>
+    <string name="files_uploaded">files uploaded</string>
+    <string name="failed_to_upload">files failed to upload</string>
+    <string name="upload_failed">Upload failed</string>
+    <string name="properties">Properties</string>
+    <string name="open_as">Open as</string>
+    <string name="open_as_text">Text</string>
+    <string name="open_as_audio">Audio</string>
+    <string name="open_as_video">Video</string>
+    <string name="open_as_image">Image</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_primary_color_title">Primary Color</string>
+    <string name="pref_accent_color_title">Accent Color</string>
+    <string name="pref_header_look_and_feel">Look and Feel</string>
+    <string name="restart_required">App restart is required</string>
+    <string name="select_primary_color">Select a primary color</string>
+    <string name="select_accent_color">Select an accent color</string>
+    <string name="title_activity_about_libs" translatable="false">AboutLibsActivity</string>
+    <string name="app_icon_made_by">App icon made by</string>
+    <string name="smashicons" translatable="false">Smashicons</string>
+    <string name="from">from</string>
+    <string name="flaticon" translatable="false">Flaticon</string>
+    <string name="pref_key_intro_v1_12_0" translatable="false">intro_v1_12_0_completed</string>
+    <string name="intro_welcome_title">Welcome</string>
+    <string name="intro_welcome_description">extRact manages your files, whether they are stored on your device or online in the cloud. Check out the documentation at x0b.github.io/docs for more information.</string>
+    <string name="intro_storage_title">Storage access required</string>
+    <string name="intro_storage_description">extRact uses rclone, and we need your permission to access all files. Please allow storage access when asked, otherwise this app may not work as intended.</string>
+    <string name="intro_community_title">Community</string>
+    <string name="intro_community_description">extRact is developed by and for the community. Please contribute by allowing anonymous error reports. See x0b.github.io/rcx-privacy for details.</string>
+    <string name="intro_community_switch">Contribute error reports</string>
+    <string name="pref_key_stream_max" translatable="false">pref_key_stream_max</string>
+    <string name="pref_key_logs" translatable="false">pref_key_logs</string>
+    <string name="pref_key_color_primary" translatable="false">pref_key_color_primary</string>
+    <string name="pref_key_color_accent" translatable="false">pref_key_color_accent</string>
+    <string name="pref_key_dark_theme" translatable="false">pref_key_theme_mode</string>
+    <string name="pref_key_wrap_filenames" translatable="false">pref_key_wrap_filenames</string>
+    <string name="pref_key_app_updates" translatable="false">pref_key_app_updates</string>
+    <string name="pref_key_app_updates_beta" translatable="false">pref_key_app_updates_beta</string>
+    <string name="pref_key_crash_reports" translatable="false">pref_key_crash_reports</string>
+    <string name="pref_key_show_thumbnails" translatable="false">pref_key_show_thumbnails</string>
+    <string name="pref_key_thumbnail_size_limit" translatable="false">thumbnail_max_size</string>
+    <string name="pref_key_wifi_only_transfers" translatable="false">pref_key_wifi_only_transfers</string>
+    <string name="pref_key_version_code" translatable="false">pref_key_version_code</string>
+    <string name="pref_key_version_name" translatable="false">pref_key_version_name</string>
+    <string name="pref_key_enable_saf" translatable="false">pref_key_enable_saf</string>
+    <string name="pref_key_enable_vcp" translatable="false">vcp_enable</string>
+    <string name="pref_key_vcp_declare_local" translatable="false">vcp_declare_local</string>
+    <string name="pref_key_vcp_grant_all" translatable="false">vcp_grant_all</string>
+    <string name="file_access">File Access</string>
+    <string name="look_and_feel">Look and Feel</string>
+    <string name="primary_color">Primary Color</string>
+    <string name="accent_color">Accent Color</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="transfer_only_on_wifi">Transfer files only over Wi-Fi</string>
+    <string name="transfer_only_on_wifi_summary">Uploading and downloading of files will be cancelled when not on Wi-Fi</string>
+    <string name="pref_key_use_proxy" translatable="false">use_proxy</string>
+    <string name="pref_key_proxy_host" translatable="false">proxy_host</string>
+    <string name="pref_key_proxy_port" translatable="false">proxy_port</string>
+    <string name="pref_key_proxy_protocol" translatable="false">proxy_protocol</string>
+    <string name="pref_key_no_proxy_hosts" translatable="false">no_proxy_hosts</string>
+    <string name="pref_use_proxy_title">Use Proxy</string>
+    <string name="pref_use_proxy_summary">Use proxy for all supported data transfers (HTTP, HTTPS)</string>
+    <string name="pref_proxy_protocol">Proxy Protocol</string>
+    <string name="pref_proxy_protocol_dlg_title">Select Protocol</string>
+    <string name="pref_proxy_protocol_http_value" translatable="false">http</string>
+    <string name="pref_proxy_protocol_https_value" translatable="false">https</string>
+    <string name="pref_proxy_host">Proxy Host</string>
+    <string name="pref_proxy_host_dlg_title">Enter Proxy IP or domain</string>
+    <string name="pref_proxy_port">Proxy Port</string>
+    <string name="pref_proxy_port_dlg_title">Enter Proxy port</string>
+    <string name="pref_proxy_exclude">Exclude from Proxy</string>
+    <string name="pref_locale">Language</string>
+    <string name="pref_locale_dlg_title">Select Language</string>
+    <string name="pref_locale_restart_notice">Language will change once the app is restarted</string>
+    <string name="pref_key_locale" translatable="false">locale</string>
+    <string name="pref_locale_not_set">Use default language</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="use_logs">Log Rclone errors</string>
+    <string name="use_logs_summary">Errors will be logged to a local file (Android/data/io.github.rcx/files/logs)</string>
+    <string name="color_picker_checkmark">Color picker checkmark</string>
+    <string name="primary_color_picker_title">Select primary color</string>
+    <string name="accent_color_picker_title">Select accent color</string>
+    <string name="notifications_pref_title">Notifications</string>
+    <string name="connectivity_pref_title">Connectivity</string>
+    <string name="open_system_settings">Open system settings</string>
+    <string name="content_description_circle">circle</string>
+    <string name="loading">Loading</string>
+    <string name="app_not_configured">Rclone Explorer is not configured</string>
+    <string name="open_app_to_configure">Please open the app to set it up first</string>
+    <string name="error_retrieving_files">Error retrieving files</string>
+    <string name="background_service_broadcast" translatable="false">ca.pkay.rcexplorer.BACKGROUND_SERVICE_BROADCAST</string>
+    <string name="background_service_broadcast_data_remote" translatable="false">ca.pkay.rcexplorer.BACKGROUND_SERVICE_BROADCAST_DATA_REMOTE</string>
+    <string name="background_service_broadcast_data_path" translatable="false">ca.pkay.rcexplorer.BACKGROUND_SERVICE_BROADCAST_DATA_PATH</string>
+    <string name="background_service_broadcast_data_path2" translatable="false">ca.pkay.rcexplorer.BACKGROUND_SERVICE_BROADCAST_DATA_PATH2</string>
+    <string name="background_service_notification_channel_description">Background service for possibly long running tasks like Move and Delete</string>
+    <string name="sync_service_notification_channel_description">Background service for sync</string>
+    <string name="moving_info">Moving…</string>
+    <string name="deleting_info">Deleting…</string>
+    <string name="operation_failed">Sync failed</string>
+    <string name="operation_failed_unknown">%1$s failed to be synced for an unknown reason.</string>
+    <string name="operation_failed_no_unmetered">We could not sync %1$s because no unmetered connection was available</string>
+    <string name="operation_failed_no_connection">We could not sync %1$s because network was unavailable.</string>
+    <string name="operation_failed_data_change">We could not sync %1$s because the connection changed and mobile data is not allowed.</string>
+    <string name="moving_service">Moving Service</string>
+    <string name="delete_service">Delete Service</string>
+    <string name="syncing_service">Syncing %1$s</string>
+    <string name="and_X_other">and %1$d other</string>
+    <string name="search">Search</string>
+    <string name="search_clear_button">Search clear button</string>
+    <string name="no_search_results">No search results</string>
+    <string name="nothing_selected">Nothing selected</string>
+    <string name="file_picker_root_title">Device storage</string>
+    <string name="remote_name_hint">Name (a-z, 0-9 only)</string>
+    <string name="amazon_cloud_storage_client_id_hint">Amazon Client ID</string>
+    <string name="amazon_cloud_storage_client_secret_hint">Amazon Client Secret</string>
+    <string name="box_client_id_hint">Box App Client ID</string>
+    <string name="box_client_secret_hint">Box App Client Secret</string>
+    <string name="dropbox_client_id_hint">DropBox App Client ID</string>
+    <string name="dropbox_client_secret_hint">DropBox App Client Secret</string>
+    <string name="drive_client_id_hint">Google App Client ID</string>
+    <string name="drive_client_secret_hint">Google App Client Secret</string>
+    <string name="next_capital">NEXT</string>
+    <string name="remote_name_cannot_be_empty">Remote name can\'t be empty</string>
+    <string name="waiting_for_code">Waiting for code</string>
+    <string name="open_browser">Open browser</string>
+    <string name="cancel_caps">CANCEL</string>
+    <string name="next_caps">NEXT</string>
+    <string name="provider_box">Box</string>
+    <string name="provider_dropbox">DropBox</string>
+    <string name="provider_amazon_cloud_drive">Amazon Cloud Drive</string>
+    <string name="required_field">Required field</string>
+    <string name="auth_server_url_hint">Auth server URL</string>
+    <string name="token_server_url_hint">Token server URL</string>
+    <string name="provider_b2">Backblaze B2</string>
+    <string name="account_id_hint">Account ID</string>
+    <string name="application_key_hint">Application key</string>
+    <string name="endpoint_hint">Endpoint for the service</string>
+    <string name="drive_root_folder_id">Root folder ID - fill in to access Computers folders</string>
+    <string name="ftp_host_hint">FTP host to connect to</string>
+    <string name="ftp_user_hint">FTP username</string>
+    <string name="ftp_port_hint">FTP port</string>
+    <string name="ftp_pass_hint">FTP password</string>
+    <string name="provider_ftp">FTP</string>
+    <string name="provider_http">HTTP</string>
+    <string name="serve_dlna">DLNA</string>
+    <string name="url_hint">URL of http host to connect to</string>
+    <string name="hubic_client_id_hint">Hubic Client ID</string>
+    <string name="hubic_client_secret_hint">Hubic Client Secret</string>
+    <string name="provider_hubic">Hubic</string>
+    <string name="pcloud_client_id_hint">Pcloud Client ID</string>
+    <string name="pcloud_client_secret_hint">Pcloud Client Secret</string>
+    <string name="provider_pcloud">Pcloud</string>
+    <string name="sftp_host_hint">SSH Host to connect to</string>
+    <string name="ssh_user_hint">SSH username</string>
+    <string name="ssh_port_hint">SSH port</string>
+    <string name="ssh_pass_hint">SSH password</string>
+    <string name="provider_sftp">SFTP/SSH</string>
+    <string name="provider_yandex">Yandex</string>
+    <string name="yandex_client_id_hint">Yandex Client ID</string>
+    <string name="yandex_client_secret_hint">Yandex Client Secret</string>
+    <string name="webdav_user_hint">User name</string>
+    <string name="webdav_pass_hint">Password</string>
+    <string name="provider_webdav">Webdav</string>
+    <string name="error_creating_remote">Error creating remote</string>
+    <string name="ftp_default_port" translatable="false">21</string>
+    <string name="sftp_default_port" translatable="false">22</string>
+    <string name="remote_creation_success">Remote created successfully</string>
+    <string name="next">Next</string>
+    <string name="leave_blank_normally">Leave blank normally</string>
+    <string name="title_activity_remote_config">Select type</string>
+    <string name="provider_onedrive">Microsoft OneDrive</string>
+    <string name="onedrive_client_id_hint">Microsoft Client ID</string>
+    <string name="onedrive_client_secret_hint">Microsoft Client Secret</string>
+    <string name="onedrive_account_type">OneDrive account type</string>
+    <string name="provider_mega_config_user">Mega username</string>
+    <string name="provider_mega_config_password">Mega password</string>
+    <string name="personal_account_type">Personal account</string>
+    <string name="business_account_type">Business account</string>
+    <string name="alias_remote_hint">Click to select remote or path to alias</string>
+    <string name="encrypt_remote_hint">Click to select remote or path to encrypt</string>
+    <string name="drive_scope__hint">Click to select scope</string>
+    <string name="remote_cannot_be_empty">Remote can\'t be empty</string>
+    <string name="provider_alias">Alias</string>
+    <string name="select_remote">Select a remote</string>
+    <string name="select_path_to_alias">Select path to Alias</string>
+    <string name="select_path_to_crypt">Select path to Encrypt</string>
+    <string name="webdav_spinner_prompt">WebDAV service provider</string>
+    <string-array name="filename_encryption_spinner_values" translatable="false">
+        <item>How to encrypt the filenames</item>
+        <item>Off</item>
+        <item>Standard</item>
+        <item>Obfuscate</item>
+    </string-array>
+    <string-array name="filename_encryption_spinner_labels">
+        <item>How to encrypt the filenames</item>
+        <item>Off</item>
+        <item>Standard</item>
+        <item>Obfuscate</item>
+    </string-array>
+    <string name="directory_name_encryption_hint">Directory name encryption</string>
+    <string name="crypt_pass_hint">Password for encryption</string>
+    <string name="crypt_pass2_hint">Password for salt</string>
+    <string name="crypt_pass2_helper_text">Optional but recommended</string>
+    <string name="crypt_config_error_no_remotes">There are no remotes</string>
+    <string name="qingstor_access_key_hint">QingStor Access Key ID</string>
+    <string name="qingstor_secret_access_key_hint">QingStor Secret Access Key (password)</string>
+    <string name="qingstor_endpoint_hint">Enter an enpoint URL to connection QingStor API</string>
+    <string name="qingstor_connection_retries_hint">Number of connection retries</string>
+    <string name="provider_crypt">Crypt</string>
+    <string name="provider_qingstor">QingStor</string>
+    <string name="leave_blank_for_anon_access">Leave blank for anonymous access</string>
+    <string name="qingstor_endpoint_helper_text">Leave blank for default value qingstor.com:443</string>
+    <string name="qingstor_zone_spinner_prompt">Choose a zone to connect to</string>
+    <string name="qingstor_connection_retires_helper">Leave blank to use the default value (3)</string>
+    <string name="azureblob_account_hint">Storage Account Name</string>
+    <string name="azureblob_key_hint">Storage Account Key</string>
+    <string name="provider_azureblob">Microsoft Azure Blob Storage</string>
+    <string name="provider_local">Local</string>
+    <string name="provider_drive">Drive</string>
+    <string name="provider_union">Union</string>
+    <string name="union_add_remote">Add Remote</string>
+    <string name="union_select_remote">Select remote path for Union</string>
+    <string name="create">Create</string>
+    <string name="no_remotes">There are no remotes</string>
+    <string name="choose_dir">Choose directory</string>
+    <string name="error_exporting_config_file">Error exporting config file</string>
+    <string name="app_update_notification_title">App update available on Github</string>
+    <string name="app_update_notification_beta">App update available on Github</string>
+    <string name="app_updates_notifications">Get notified about app updates</string>
+    <string name="beta_app_updates_notifications">Get notified about pre-release versions</string>
+    <string name="delete_remote_title">Delete remote?</string>
+    <string name="rename_remote">Rename Remote</string>
+    <string name="empty_trash">Empty trash</string>
+    <string name="trash_emptied">Trash emptied</string>
+    <string name="error_emptying_trash">Error emptying trash</string>
+    <string name="file_options_content_description">File options</string>
+    <string name="link">Link</string>
+    <string name="error_generating_link">Error generating a link</string>
+    <string name="generating_public_link">Generating public link</string>
+    <string name="public_link">Public link</string>
+    <string name="link_copied_to_clipboard">Link copied to clipboard</string>
+    <string name="provider_cache">Cache</string>
+    <string name="chunk_size_hint">Click to set chunk size (default 5 MB)</string>
+    <string name="info_age_hint">Click to set cache expiry time (default 6 h)</string>
+    <string name="chunk_total_size_hint">Click to select cache size (default 10 GB)</string>
+    <string name="chunk_size">Chunk size</string>
+    <string name="selected_chunk_size">Chunk size: %1$s</string>
+    <string name="cache_expiry">Cache expiry time</string>
+    <string name="selected_cache_expiry">Cache expiry time: %1$s</string>
+    <string name="cache_size">Cache size</string>
+    <string name="selected_cache_size">Cache size: %1$s</string>
+    <string name="send_anonymous_crash_reports">Send anonymous crash reports</string>
+    <string name="pref_crash_report_summary">Help the developers by sending error and crash reports. See https://x0b.github.io/rcx-privacy. \nID: %1$s.</string>
+    <string name="pref_send_test_report_title">Send Test Report</string>
+    <string name="pref_send_test_report_summary">Sends a test report to the crash logger</string>
+    <string name="pin_to_the_top">Pin to the top</string>
+    <string name="unpin_from_the_top">Unpin</string>
+    <string name="pin_to_drawer">Pin to drawer</string>
+    <string name="unpin_from_drawer">Unpin from drawer</string>
+    <string name="shared_preferences_pinned_remotes" translatable="false">shared_preferences_pinned_remotes</string>
+    <string name="shared_preferences_drawer_pinned_remotes" translatable="false">shared_preferences_drawer_pinned_remotes</string>
+    <string name="shared_preferences_allow_sync_trigger_while_idle" translatable="false">shared_preferences_allow_sync_trigger_while_idle</string>
+    <string name="app_latest_release_url" translatable="false">https://github.com/x0b/rcx/releases/latest</string>
+    <string name="app_relase_api_url" translatable="false">https://api.github.com/repos/x0b/rcx/releases/latest</string>
+    <string name="app_pre_release_api_url" translatable="false">https://api.github.com/repos/x0b/rcx/releases</string>
+    <string name="pref_key_update_release_version" translatable="false">github_release_version</string>
+    <string name="pref_key_update_last_check" translatable="false">last_update_check</string>
+    <string name="experimental_features">Experimental Features</string>
+    <string name="show_thumbnails">Show thumbnails</string>
+    <string name="pref_thumbnails_size_title">Max. file size for thumbnails</string>
+    <string name="pref_thumbnails_dlg_title">Size limit (MB)</string>
+    <string name="pref_thumbnails_size_summary">%1$.1f MB</string>
+    <string name="generate_password_title">Generate Password</string>
+    <string name="set_password_button">Set Password</string>
+    <string name="generate_password">Generate</string>
+    <string name="password_length_label">Length</string>
+    <string name="password_lower_case_checkbox">Lower case</string>
+    <string name="password_upper_case_checkbox">Upper case</string>
+    <string name="password_numbers_checkbox">Numbers</string>
+    <string name="password_special_chars_checkbox">Special characters</string>
+    <string name="password_refresh_content_description">Refresh button</string>
+    <string name="show_passwords">Show passwords</string>
+    <string name="wrap_filenames">Wrap filenames</string>
+    <string name="error_retrieving_remote">Error retrieving remote %1$s</string>
+    <string name="dialog_go_to_title">Go to</string>
+    <string name="go_to">Go to</string>
+    <string name="set_default_for_all_sftp_ssh_remotes">Set default for all SFTP/SSH remotes</string>
+    <string name="sftp_home">home</string>
+    <string name="sftp_root">root</string>
+    <string name="pref_key_go_to_default_set" translatable="false">pref_key_go_to_default_set</string>
+    <string name="pref_key_start_at_root" translatable="false">pref_key_start_at_root</string>
+    <string name="drive_scope_title">Google Drive Scope</string>
+    <string name="menu_select_storage">Storage</string>
+    <string name="select_storage">Select Storage</string>
+    <string name="empty_trash_confirmation">Are you sure you want to empty the trash?</string>
+    <string name="app_shortcuts_settings_dialog_title">Application Shortcuts</string>
+    <string name="settings_header_general">General</string>
+    <string name="app_shortcuts_settings">Application Shortcuts</string>
+    <string name="shared_preferences_app_shortcuts" translatable="false">shared_preferences_app_shortcuts</string>
+    <string name="app_shortcuts_max_toast">Maximum of 4 shortcuts allowed</string>
+    <string name="remote_not_found">Remote not found</string>
+    <string name="add_to_home_screen">Add to home screen</string>
+    <string name="pick_a_protocol">Pick a protocol</string>
+    <string name="sync">Sync…</string>
+    <string name="select_sync_direction">Select sync direction</string>
+    <string name="nav_drawer_pinned_header">Pinned</string>
+    <string name="nav_header_options_header">Options</string>
+    <string name="download_cancelled">Download cancelled</string>
+    <string name="wifi_connections_isnt_available">Wi-Fi connection isn\'t available</string>
+    <string name="sync_cancelled">Sync operation cancelled</string>
+    <string name="upload_cancelled">Upload cancelled</string>
+    <string name="logging_settings_header">Logging</string>
+    <string name="look_and_feel_settings_icon_content_description">Look and Feel settings icon</string>
+    <string name="general_settings_icon_content_description">General settings icon</string>
+    <string name="notification_settings_icon_content_description">Notification settings icon</string>
+    <string name="logging_settings_icon_content_description">Logging settings icon</string>
+    <string name="file_access_settings_icon_content_description">File access settings icon</string>
+    <string name="hidden_remotes">Hidden remotes</string>
+    <string name="shared_preferences_hidden_remotes" translatable="false">shared_preferences_hidden_remotes</string>
+    <string name="select_remotes_to_hide">Select remotes to hide</string>
+    <string name="pref_key_renamed_remotes" translatable="false">renamed_remotes</string>
+    <string name="pref_key_renamed_remote_prefix" translatable="false">remote_name_%1$s</string>
+    <string name="allow_remote_access">Allow access from other devices</string>
+    <string name="pref_key_local_alias_remotes" translatable="false">local_alias_remotes</string>
+    <string name="pref_key_refresh_local_aliases" translatable="false">refresh_local_aliases</string>
+    <string name="refreshing_local_alias_remotes">Refreshing local alias remotes…</string>
+    <string name="pref_enable_local_alias_title">Refresh local drives</string>
+    <string name="pref_enable_local_alias_summary">Automatically refresh local storage media when starting</string>
+    <string name="authentication">Authentication</string>
+    <string name="optional">Optional</string>
+    <string name="serve_dialog_title">Serve a remote</string>
+    <string name="serve_dialog_remote_notice_enabled">The current directory will be visible to the local network (TVs, media players).</string>
+    <string name="serve_dialog_remote_notice_disabled">Files will only be available to other apps on this device.</string>
+    <string name="pref_choice_serve_dialog_allow_ext" translatable="false">choice_serve_allow_ext</string>
+    <string name="config_use_external_question">Import found configuration?</string>
+    <string name="config_import_external_explain">Automatically import from %1$s</string>
+    <string name="pref_header_file_access">File Access</string>
+    <string name="pref_saf_enable">Enable SAF Client Preview</string>
+    <string name="pref_saf_summary">EXPERIMENTAL: Access SD cards and other storage devices</string>
+    <string name="pref_saf_add_permission">Add Storage</string>
+    <string name="pref_saf_permission_label_primary">Internal Storage (%1$s)</string>
+    <string name="pref_saf_permission_label_external">External Storage (%1$s)</string>
+    <string name="pref_saf_virtual_content_provider_enable">Enable Content Provider Preview</string>
+    <string name="pref_saf_virtual_content_provider_summary">EXPERIMENTAL: Allows you to grant other apps access to rclone remotes</string>
+    <string name="pref_saf_vcp_local_pretend_enable">Declare as local provider</string>
+    <string name="pref_saf_vcp_local_pretend_summary">Some apps (e.g. Google docs) otherwise can\'t access files</string>
+    <string name="pref_saf_vcp_grant_all_enable">All any app to access your remotes</string>
+    <string name="pref_saf_vcp_grant_all_summary">WARNING: This will allow any app to read and write any path on any configured remote.</string>
+    <string name="saf_uri_permission_added">Storage added</string>
+    <string name="saf_uri_permission_cancelled">Permission Cancelled</string>
+    <string name="saf_uri_permission_error">Invalid permission - can not access storage</string>
+    <string name="saf_uri_permission_already_added">Storage or a subfolder is already added</string>
+    <string name="saf_uri_permission_no_support">Third party not yet supported. Open an issue with the affected app name.</string>
+    <plurals name="virtual_content_provider_summary">
+        <item quantity="one">One Remote available</item>
+        <item quantity="other">%1$d Remotes available</item>
+    </plurals>
+    <string name="virtual_content_provider_exception_advice">Check your network connection</string>
+    <string name="virtual_content_provider_exception_error">Support info: \n%1$s</string>
+    <string name="virtual_content_provider_null_content">Could not get remote or directory content. You may find more information in the log file.</string>
+    <string name="virtual_content_provider_service_error">Rclone service connection failure. Force stop and retry.</string>
+    <string name="virtual_content_provider_no_remotes">No remotes configured. Open extRact to add a storage location.</string>
+    <string name="remote_properties_remote_name">Remote name</string>
+    <string name="remote_properties_storage_usage">Storage usage</string>
+    <string name="remote_properties_storage_stats">%1$s / %2$s used (%3$s free)</string>
+    <string name="remote_properties_storage_used">%1$s used</string>
+    <string name="remote_properties_about_failed">Unauthorized or not supported</string>
+    <string name="remote_properties_authorization">Authorization</string>
+    <string name="remote_properties_authorize_tap">Tap to renew</string>
+    <string name="rclone_get_about_failed">Error retrieving storage statistics</string>
+    <string-array name="serve_options" translatable="false">
+        <item>HTTP</item>
+        <item>WebDAV</item>
+    </string-array>
+    <string-array name="sync_direction_options">
+        <item>Sync local to remote</item>
+        <item>Sync remote to local</item>
+    </string-array>
+    <string name="name_will_be_deleted">%1$s will be deleted</string>
+    <plurals name="delete_x_items">
+        <item quantity="one">Delete %1$d item</item>
+        <item quantity="other">Delete %1$d items</item>
+    </plurals>
+    <string name="move_operation_failed">Move operation failed</string>
+    <string name="sync_operation_failed">Sync operation failed</string>
+    <string name="pref_open_all_files_setting_label">Grant MANAGE_EXTERNAL_STORAGE permission</string>
+    <string name="pref_open_all_files_setting_summary">EXPERIMENTAL: Only works on Android R (Android 11)</string>
+    <string name="pref_key_accessible_storage_locations" translatable="false">accessible_storage_locations</string>
+    <string name="no_app_found_for_this_link">No app found for this link</string>
+    <string name="documentsui_missing">System component for files (com.android.documentsui) missing</string>
+
+    <string name="back">Back</string>
+    <string name="task_dialog_save">save</string>
+    <string name="task_dialog_title_textfield_hint">Name</string>
+
+    <string name="sync_direction_local_remote">Sync local to remote</string>
+    <string name="sync_direction_remote_local">Sync remote to local</string>
+    <string name="tasks">Tasks</string>
+    <string name="edit">Edit</string>
+    <string name="start_task">Start Task</string>
+    <string name="copy_taskid">Copy TaskID</string>
+    <string name="task_copied_id_to_clipboard">Copied ID to clipboard!</string>
+    <string name="action_tasks_export">Export Tasks</string>
+    <string name="action_tasks_import">Import Tasks</string>
+    <string name="importer_unknown_error">Unknown error importing task!</string>
+    <string name="importer_no_file_selected">No File was selected</string>
+    <string name="exporter_success">The file was successfully stored at:</string>
+    <string name="sync_direction_copy_local_remote">Copy local to remote</string>
+    <string name="sync_direction_copy_remote_local">Copy remote to local</string>
+    <string name="sync_direction_bidirectional">Sync Bidirectional</string>
+    <string name="copy">Copy</string>
+    <string name="task_dialog_title_name">Name</string>
+    <string name="task_dialog_title_remote">Remote</string>
+    <string name="task_dialog_title_remote_path">remote path</string>
+    <string name="task_dialog_title_local_path">Local Path</string>
+    <string name="task_dialog_title_sync_direction">Sync Direction</string>
+    <string name="operation_success">%s was successful</string>
+    <string name="operation_success_description_zero">There was nothing to do.</string>
+    <plurals name="operation_success_description">
+        <item quantity="one">We successfully synced %2$s in %3$d file.</item>
+        <item quantity="other">We successfully synced %2$s in %3$d files.</item>
+    </plurals>
+    <string name="operation_success_description_deletions_prefix">We also deleted %d files and folders.</string>
+    <string name="notification_sync_failed">Sync operation failed</string>
+    <string name="pin_to_dektop">Pin to Home</string>
+    <string name="title_activity_task">Create a new Task</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+
+    <string name="task_edit_label_name">General Information</string>
+    <string name="task_edit_label_local">Local Storage Path</string>
+    <string name="task_edit_label_remote">Remote Storage Path</string>
+    <string name="task_edit_label_direction">Direction</string>
+    <string name="task_edit_hint_title">Title</string>
+    <string name="task_edit_hint_local">Local Path</string>
+    <string name="task_edit_hint_remote">Remote Path</string>
+    <string name="rcd_service_notification_running_in_background">Rclone is running in background</string>
+    <string name="rcd_service_notification_no_active_jobs">No active jobs.</string>
+    <string name="rcd_service_notification_btn_stop_all">Stop All</string>
+    <string name="rcd_service_notification_stats_template">Running: %1$d, Finished: %2$d, Failed: %3$d</string>
+    <string name="pref_key_rcd_user" translatable="false">rcd_user</string>
+    <string name="pref_key_rcd_pass" translatable="false">rcd_pass</string>
+    <string name="report_collection_title">Bug report</string>
+    <string name="report_collection_collecting">Collecting data for bug report</string>
+    <string name="report_collection_stop_collection">Stop collection</string>
+    <string name="pref_bugreport_start_title">Collect local bug report</string>
+    <string name="pref_bugreport_start_summary">Tap to start data collection, then try to reproduce issue and stop collection.</string>
+    <string name="pref_send_sigquit_title">Debug: Stop with SIGQUIT</string>
+    <string name="pref_send_sigquit_summary">Stops all rclone processes with kill -SIGQUIT. Requires logging enabled.</string>
+    <string name="sync_notification_transferred">Transferred %s of %s</string>
+    <string name="sync_notification_speed">"Speed:     %s"</string>
+    <string name="sync_notification_remaining">"Remaining: %s"</string>
+    <string name="sync_notification_errors">"Errors:    %s"</string>
+    <string name="sync_notification_deletions">"Deletions: %s"</string>
+    <string name="sync_notification_file_syncing">File: %14s</string>
+    <string name="sync_notification_file_checking">Checking: %14s</string>
+    <string name="sync_notification_elapsed">Elapsed: %14s</string>
+    <string name="sync_notification_short">%s of %s, %s remaining</string>
+    <plurals name="modern_prettyprint_duration_d">
+        <item quantity="one">%s Day</item>
+        <item quantity="other">%s Days</item>
+    </plurals>
+    <plurals name="modern_prettyprint_duration_h">
+        <item quantity="one">%s Hour</item>
+        <item quantity="other">%s Hours</item>
+    </plurals>
+    <plurals name="modern_prettyprint_duration_m">
+        <item quantity="one">%s Minute</item>
+        <item quantity="other">%s Minutes</item>
+    </plurals>
+    <plurals name="modern_prettyprint_duration_s">
+        <item quantity="one">%s Second</item>
+        <item quantity="other">%s Seconds</item>
+    </plurals>
+
+    <string name="abi_not_supported_arm_downgrade">Unfortunately, your device does not support this version of extRact. Try the armeabi-v7a APK from github.com/x0b/rcx instead.</string>
+    <string name="abi_not_supported">Unfortunately, your device does not support this version of extRact.</string>
+    <string name="trigger">Trigger</string>
+    <string name="title_activity_trigger">Trigger</string>
+    <string name="enabled">Enabled</string>
+    <string name="trigger_name">Description</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="time">Time</string>
+    <string name="task_to_run">Task to run</string>
+    <string name="notification_triggerservice_description">This is a notification that allows the triggermechanism to start a Task</string>
+    <string name="notification_triggerservice_title">Triggerservice</string>
+    <string name="intent_channel_notification_description">Channel for intent notifications</string>
+    <string name="message_trigger_enabled">Enabled Trigger</string>
+    <string name="message_trigger_disabled">Disabled Trigger</string>
+    <string name="trigger_time_label">Time:</string>
+    <string name="weekday_shorthand_mon">MON</string>
+    <string name="weekday_shorthand_tue">TUE</string>
+    <string name="weekday_shorthand_wed">WED</string>
+    <string name="weekday_shorthand_thur">THUR</string>
+    <string name="weekday_shorthand_fri">FRI</string>
+    <string name="weekday_shorthand_sat">SAT</string>
+    <string name="weekday_shorthand_sun">SUN</string>
+    <string name="trigger_task_label">Task:</string>
+    <string name="trigger_save_notasks">There are no tasks!</string>
+    <string name="taskactivity_task_not_found">This task was not found</string>
+    <string name="triggeractivity_trigger_not_found">Trigger not found!</string>
+    <string name="task_item_label_from">From:</string>
+    <string name="task_item_label_to">To:</string>
+    <string name="task_item_label_from_bisync">Path 1:</string>
+    <string name="task_item_label_to_bisync">Path 2:</string>
+    <string name="no_tasks_warning">There are no tasks. Please define a task first!</string>
+    <string name="no_trigger_warning">There are no triggers. Please define a trigger first!</string>
+    <string name="add_trigger">Add Trigger</string>
+    <string name="add_task">Add Task</string>
+    <string name="retry_failed_sync">Retry</string>
+    <string name="task_service_notification_title">Task Start Service</string>
+    <string name="task_service_notification_description">This Service starts your selected task. Please wait a moment.</string>
+    <string name="taskfragment_no_tasks_warning">There are no tasks. Add one here!</string>
+    <string name="auto_theme">Follow System Theme</string>
+    <string name="light_theme">Light Mode</string>
+    <string name="theme_title">Theme</string>
+    <string name="remote_folder_picker_title">Folderpicker</string>
+    <string name="logFragment">Logs</string>
+    <string name="start_sync">Started Sync</string>
+    <string name="alarm_while_idle">Allow tasks to run while the device is idle</string>
+    <string name="alarm_while_idle_summary">This may consume more battery since the device has to wake up for the task. If disabled, tasks can be heavily delayed.</string>
+    <string name="task_data_validation_error_no_local_path">You have not selected a local path</string>
+    <string name="task_data_validation_error_no_remote_path">You have not selected a remote path.</string>
+    <string name="bisync">Both Ways</string>
+    <string name="description_sync_direction">This decides from where to where data is moved.</string>
+    <string name="description_sync_direction_sync_tolocal">This will sync files from remote storage to local storage. It will also delete files on local storage if they are not present on the remote. Only changes local storage.</string>
+    <string name="description_sync_direction_sync_toremote">This will sync files from local storage to remote storage. It will also delete files on the remote storage if they are not present locally. Only changes destination.</string>
+    <string name="description_sync_direction_copy_toremote">This will only copy files from local storage to remote storage. No files are beeing deleted, but updated.</string>
+    <string name="description_sync_direction_copy_tolocal">This will only copy files from remote storage to local storage.  No files are beeing deleted, but updated.</string>
+    <string name="description_sync_direction_sync_bidirectional">This will try to keep local and remote the same, uploading, downloading and deleting files as required</string>
+    <string name="intro_successful_setup">You are now ready to start!</string>
+    <string name="intro_unsuccessful_setup">Manage files not granted</string>
+    <string name="status_offendingfile">"The offending File: "</string>
+    <string name="s3_spinner_prompt">S3 service provider</string>
+    <string name="s3_spinner_wrong_selection">You need to select a proper provider</string>
+    <string name="use_md5checksum">Use md5checksum</string>
+    <string name="task_hint_wifi_ignore_defaults">Tasks will not follow the wifi-setting set globally in the app\'s settings. This Setting will override it.</string>
+    <string name="task_hint_md5checksum">This will use the checksum instead of filesize. May take longer or use more battery.</string>
+    <string name="shortcut_start_service">Started Sync!</string>
+    <string name="task_copy_suffix">(Copy)</string>
+    <string name="trigger_copy_suffix">(Copy)</string>
+    <string name="trigger_label_weekdays">Weekdays</string>
+    <string name="sync_service_notification_channel_title">Sync service</string>
+    <string name="sync_service_notification_channel_success_title">Sync service success</string>
+    <string name="sync_service_notification_channel_fail_title">Sync service fail</string>
+    <string name="sync_service_notification_channel_success_description">Notification for successful syncs</string>
+    <string name="sync_service_notification_channel_fail_description">Notification for failed syncs</string>
+</resources>

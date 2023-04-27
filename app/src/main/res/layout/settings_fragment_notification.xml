@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.SettingsActivity"
+    android:orientation="vertical">
+    <!--tools:showIn="@layout/activity_settings"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/settings_padding_ends"
+        android:paddingEnd="@dimen/settings_padding_ends"
+        android:paddingBottom="16dp"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/settings_padding_topbottom"
+            android:paddingBottom="@dimen/settings_padding_topbottom"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <Button
+                android:id="@+id/notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/open_system_settings" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/app_updates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/settings_padding_topbottom"
+                android:paddingBottom="@dimen/settings_padding_topbottom"
+                android:text="@string/app_updates_notifications"/>
+
+            <Switch
+                android:id="@+id/app_updates_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <View
+                android:id="@+id/app_updates_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_divider_size"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dividerColor"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/beta_app_updates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/settings_padding_topbottom"
+                android:paddingBottom="@dimen/settings_padding_topbottom"
+                android:text="@string/beta_app_updates_notifications" />
+
+            <Switch
+                android:id="@+id/beta_app_updates_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:id="@+id/beta_app_updates_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_divider_size"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dividerColor" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
